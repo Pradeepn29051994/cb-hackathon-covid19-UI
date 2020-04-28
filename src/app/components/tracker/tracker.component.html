@@ -1,0 +1,9 @@
+<div>
+  <div *ngIf="showData" style="height: 400px">
+    <h4>Tracker</h4>
+    <ejs-treegrid height='100%' width='100%' [treeColumnIndex]="0" enableCollapseAll="false" 
+    [dataSource]="data" childMapping="subtasks" [allowSorting]="true" [sortSettings]="sortSetting"
+      [allowFiltering]="true">
+    </ejs-treegrid>
+  </div>
+</div>
