@@ -20,6 +20,6 @@ export class TrackerService {
   totalCasesList = [];
   
   getTrackerdata(){
-   return this.http.get<object[]>('http://localhost:8089/covid19/stateWiseSummary')
+   return this.http.get<object[]>('http://covid19aws-env.eba-xf2ysjvp.us-east-2.elasticbeanstalk.com/covid19/stateWiseSummary')
   }
 }
